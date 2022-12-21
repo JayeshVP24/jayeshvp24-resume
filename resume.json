@@ -1,0 +1,212 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "skills": "Skills",
+    "awards": "Achievements ",
+    "education": "Education",
+    "work": "Professional Experience",
+    "projects": "Projects"
+  },
+  "basics": {
+    "name": "Jayesh Potlabattini",
+    "email": "jayeshpotlabattini24@gmail.com",
+    "phone": "+91 8291524320",
+    "location": {
+      "address": "Mumbai, India"
+    },
+    "website": "jayeshvp24.dev"
+  },
+  "education": [
+    {
+      "institution": "Thakur College of Engineering & Technology",
+      "location": "Kandivali, Mumbai",
+      "studyType": "B.Tech",
+      "area": "Computer Engineering",
+      "startDate": "Jun 2021",
+      "endDate": "Apr 2024"
+    },
+    {
+      "institution": "Vidyalankar Polytechnic",
+      "area": "Computer Engineering",
+      "studyType": "Diploma",
+      "gpa": "96.34",
+      "location": "Wadala, Mumbai",
+      "startDate": "Jun 2018",
+      "endDate": "Mar 2021"
+    }
+  ],
+  "work": [
+    {
+      "highlights": [
+        "Handle Socials, Create Posters, Magazines,  Bulletins. ",
+        "Handle all technical aspects at all events"
+      ],
+      "company": "SORT & Literary Club, TCET",
+      "position": "Technical Head",
+      "location": "Mumbai, IN",
+      "startDate": "Aug 2022",
+      "endDate": "Apr 2023"
+    },
+    {
+      "highlights": [
+        "Take sessions related to Google Cloud on Youtube",
+        "Handle 100+ participants of the campaign, ensure smooth transitions of their work."
+      ],
+      "company": "GDSC, TCET",
+      "position": "Google Cloud Facilitator",
+      "location": "Mumbai, IN",
+      "startDate": "Sep 2022",
+      "endDate": "Dec 2022"
+    },
+    {
+      "highlights": [
+        "Created 10+ Business Centric websites"
+      ],
+      "company": "Freelancer",
+      "position": "Freelance Full Stack Web Developer",
+      "location": "Mumbai, IN",
+      "startDate": "Jan 2022",
+      "endDate": "Present"
+    },
+    {
+      "website": "",
+      "highlights": [
+        "Used NextJs, TailwindCSS to create fast business centric websites for 5+ clients",
+        "Learned Image Optimization and increased page loads by 60%"
+      ],
+      "company": "Elightlabs Technologies",
+      "position": "Intern -  Full Stack Web Developer",
+      "location": "Mumbai, IN",
+      "startDate": "Sep 2021",
+      "endDate": "Dec 2021"
+    },
+    {
+      "highlights": [
+        "Wrote 30+ APIs in Node.js & Express, TypeORM, MySQL, MongoDB, Redis, Postman related to transactions, dashboard & visualization ",
+        "Implemented whole Friends system for their game from scratch",
+        "Built Admin Dashboard from scratch using Ionic React",
+        "Optimized and Solved Edge case issues in existing APIs"
+      ],
+      "company": "Nirlopa Games",
+      "position": "Intern - Full Stack Web Developer",
+      "location": "Mumbai, IN",
+      "startDate": "Nov 2020",
+      "endDate": "Feb 2021"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Javascript",
+        "Typescript",
+        "Python",
+        "Java",
+        "C++"
+      ],
+      "name": "Languages"
+    },
+    {
+      "keywords": [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Express",
+        "TailwindCSS",
+        "Sass",
+        "HTML",
+        "CSS",
+        "Redux",
+        "Firebase",
+        "x-state",
+        "UI/UX"
+      ],
+      "name": "Technologies"
+    },
+    {
+      "keywords": [
+        "MySQL",
+        "Firestore",
+        "MongoDB",
+        "PostgresSQL"
+      ],
+      "name": "Database"
+    },
+    {
+      "keywords": [
+        "Figma",
+        "Postman",
+        "Git",
+        "VSCode",
+        "Notion",
+        "Github"
+      ],
+      "name": "Tools"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        "Next.js",
+        "Typescript",
+        "Firebase",
+        "TailwindCSS"
+      ],
+      "name": "S.H.I.E.L.D",
+      "description": "S.H.I.E.L.D provides a community which helps other by sharing/reporting the uncertain behaviour or sitatuion. Reporting done by any individual seems to be as an announcement to all the people nearby 📣 (around 2 km radius)",
+      "url": "https://github.com/JayeshVP24/S.H.I.E.L.D"
+    },
+    {
+      "keywords": [
+        "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Firebase",
+        "Python",
+        "Flask"
+      ],
+      "name": "Research Nerd",
+      "description": "A Research Paper Recommender based on a hybrid model that fetches this similarity from user preferences and a content based filtering approach",
+      "url": "https://github.com/JayeshVP24/Research-Nerd"
+    },
+    {
+      "keywords": [
+        "NextJS",
+        "SaaS",
+        "Firebase",
+        "Flask",
+        "Javascript",
+        "Python"
+      ],
+      "name": "Dripy",
+      "description": "An E-commerce Recommendation system built with machine learning with AI Chat bot, sentiment analysis, user segmentation, user retention and much more",
+      "url": "https://github.com/JayeshVP24/Dripy/"
+    },
+    {
+      "keywords": [
+        "React.js",
+        "Javascript"
+      ],
+      "name": "Covid-19 Tracker",
+      "description": "Corona Virus tracker made using Disease.sh API with realtime visualization via maps and charts",
+      "url": "https://github.com/JayeshVP24/covid-19-tracker"
+    }
+  ],
+  "awards": [
+    {
+      "title": "1st in Final Year Project Competition",
+      "date": "Mar 2021",
+      "awarder": "Vidyalankar Polytechnic",
+      "summary": "Recognized for creating an end-to-end IoT project - Automated Indoor Farming"
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
