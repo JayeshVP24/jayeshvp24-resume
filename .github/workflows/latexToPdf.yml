@@ -1,23 +1,11 @@
-name: Build LaTeX document
-on: [push]
-jobs:
-  build_latex:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v3
-      - name: Compile LaTeX document for Jayesh Potlabattini
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: main.tex
-          extra_fonts: |
-            ./fonts/*.otf
-            ./fonts/*.ttf
-        env: |
-          ".:./awesome-cv.cls//:"
-          ".:./fontawesome.sty//:"
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: main.pdf
+name: xelatex resume generator
+on:
+  push:
+    branches: [main]
+  jobs:
+    latex_pdf:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - run: sudo apt-get install texlive-xetex
+        - run: xelatex resume.tex
