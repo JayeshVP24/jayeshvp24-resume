@@ -19,10 +19,12 @@ jobs:
             mkdir resumeBuild
             cp resume.pdf resumeBuild/
             cp index.html resumeBuild/
-        - name: Git add
-          run: git add resumeBuild/
+        # - name: Git add
+        #   run: git add resumeBuild/
+        - run: npm ci
         - uses: FirebaseExtended/action-hosting-deploy@v0
           with:
             repoToken: '${{ secrets.GITHUB_TOKEN }}'
             firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_JAYESH_POTLABATTINI }}'
             projectId: jayesh-potlabattini
+            channelId: live
