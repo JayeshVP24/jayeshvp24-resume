@@ -2,7 +2,7 @@ name: xelatex resume generator
 on:
   push:
     branches: [main]
-  jobs:
+jobs:
     latex_pdf:
       runs-on: ubuntu-latest
       steps:
