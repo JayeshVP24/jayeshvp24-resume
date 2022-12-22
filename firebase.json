@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "resume-jayesh-potlabattini",
+    "public": "resumeBuild",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
