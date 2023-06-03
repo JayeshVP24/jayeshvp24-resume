@@ -8,7 +8,8 @@ jobs:
       steps:
         - uses: xu-cheng/latex-action@v2
           with:
-            root_file: /resume.tex 
+            work_in_root_file_dir: true,
+            root_file: resume.tex 
         - name: Upload PDF file
           uses: actions/upload-artifact@v3
           with:
