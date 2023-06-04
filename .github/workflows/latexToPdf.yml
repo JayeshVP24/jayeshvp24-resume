@@ -11,6 +11,7 @@ jobs:
         - uses: xu-cheng/latex-action@v2
           with:
             root_file: resume.tex
+            latexmk_use_xelatex: true
             continue_on_error: true
             args: "-f"
             
