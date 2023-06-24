@@ -1,0 +1,299 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}    
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Jayesh Potlabattini} \\ \vspace{1pt}
+    Mumbai,India \\ \vspace{1pt}
+    \href{mailto:contact@jayeshvp24.dev}{\raisebox{-0.2\height}\faEnvelope\  \underline{contact@jayeshvp24.dev}} ~ 
+    \href{https://linkedin.com/in/JayeshVP24}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{JayeshVP24}}  ~
+    \href{https://github.com/JayeshVP24}{\raisebox{-0.2\height}\faGithub\ \underline{JayeshVP24}} ~
+     \href{https://twitter.com/JayeshVP24}{\raisebox{-0.2\height}\faTwitter\ \underline{JayeshVP24}}  ~
+    \vspace{-0pt}
+\end{center}
+
+% %------RELEVANT COURSEWORK-------
+% \section{SKILLS}
+%     \resumeSubHeadingListStart
+%         % \resumeSubheading {Languages}
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%                 \item Data Structures \& Algorithms
+%                 \item Operating Systems
+%                 \item Network Security
+%                 \item Database Management System (DBMS)
+%                 \item Artificial Intelligence
+%                 \item OOPS Concept
+%                 \item Web Development
+%                 \item Android Development
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {TCET - Open Source \href{https://opensource.tcetmumbai.in/}{\raisebox{-0.1\height}\faExternalLink }  \href{https://github.com/tcet-opensource/}{\raisebox{-0.1\height}\faGithub}}{MAR 2023 -- Present} 
+      {\underline{Cofounder - Web Lead}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Managing} a team of \textbf{60 students} across various domains of Web, \textbf{helping} them with \textbf{open source contributions}}}\resumeItem{\normalsize{\textbf{Building software's and automating} TCET with an aim to \textbf{promote open source technology}  }}
+        \resumeItem{\normalsize{\textbf{Rebuilt} \textbf{Training and Placement Website} using Astro.js, Strapi, Supabase, TailwindCSS and deployed using Github Pages at \href{https://tnp.tcetmumbai.in}{\textbf{TNP.TCETMUMBAI.IN}}  }}
+  
+      \resumeItemListEnd
+    \resumeSubheading
+      {Self Employed \href{certificate Link}{\raisebox{-0.1\height}}}{JAN 2022 -- JAN 2023} 
+      {\underline{Freelance Full Stack Web Developer}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Helped \textbf{10+ businesses} build their \textbf{online presence} and \textbf{increase revenue} }}
+  
+      \resumeItemListEnd
+    \resumeSubheading
+      {ElightLabs Technologies \href{https://elightlabs.com/}{\raisebox{-0.1\height}\faExternalLink}}{SEP 2021 -- DEC 2021} 
+      {\underline{Full Stack Web Developer and UI/UX Designer}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Catered to \textbf{5+ clients} website needs }}
+         \resumeItem{\normalsize{Designed UI in \textbf{Figma} and developed websites in \textbf{Next.js} and \textbf{TailwindCSS}, used \textbf{Firebase} for database purposes }}
+         \resumeItem{\normalsize{Increased \textbf{Page Load Speed by 60\%} using \textbf{Image Optimization}
+}}
+      \resumeItemListEnd
+  \resumeSubheading
+      {Nirlopa Games \href{https://nirlopagames.com/}{\raisebox{-0.1\height}\faExternalLink}}{NOV 2020 -- FEB 2021} 
+      {\underline{Full Stack Web Developer}}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Wrote 30+ APIs} in Node.js, Express, TypeORM, MySQL, MongoDB, Redis, Postman related to transactions, dashboard, visualization}}
+         \resumeItem{\normalsize{Implemented complete \textbf{Friends system} in \textbf{MongoDB} for their game from scratch }}
+         \resumeItem{\normalsize{\textbf{Built Admin Dashboard} from \textbf{scratch} using Ionic React}}
+         \resumeItem{\normalsize{ Increased API \textbf{response speeds by 40\%} by \textbf{optimizing edge cases} }}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://activitydekho.jayeshvp24.dev/}{\textbf{\large{\underline{Activity Dekho}}} \href{https://activitydekho.jayeshvp24.dev/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Next.js, Firebase, Google Cloud, XState, TailwindCSS}}}{DEC 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Automated} Event Attendance System of TCET to \textbf{consolidate AICTE Points}. }}
+            \resumeItem{\normalsize{\textbf{Live} and \textbf{in use by 4000+} students of TCET }}
+            \resumeItem{\normalsize\href{https://github.com/JayeshVP24/Activity-Dekho}{https://github.com/JayeshVP24/Activity-Dekho}} 
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/JayeshVP24/Social-Crypt}{\textbf{\large{\underline{Social Crypt}}} \href{https://github.com/JayeshVP24/Social-Crypt}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Next.js, Flask, Hugging Face, Twitter Scrapper, TailwindCSS}}}{JAN 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Detect \textbf{Propogandistic News} of News Articles and \textbf{analyze user behavior} across internet }}
+            \resumeItem{\normalsize{Help to \textbf{identify trustness} of news articles }}
+            \resumeItem{\normalsize\href{https://github.com/JayeshVP24/Social-Crypt}{https://github.com/JayeshVP24/Social-Crypt}} 
+          \resumeItemListEnd
+          \vspace{-13pt}
+           \resumeProjectHeading
+          {\href{http://shield-three.vercel.app/}{\textbf{\large{\underline{S.H.I.E.L.D.}}} \href{http://shield-three.vercel.app/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Next.js, Leaflet.js, Firebase, Landbot, Twilio, Node.js}}}{SEP 2022}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Community App to \textbf{share and report uncertain behaviour}, focused emergency support app \textbf{supported completely by community}}}
+            \resumeItem{\normalsize\href{https://github.com/JayeshVP24/S.H.I.E.L.D}{https://github.com/JayeshVP24/S.H.I.E.L.D}} 
+          \resumeItemListEnd 
+ \vspace{-13pt}
+     \resumeProjectHeading
+          {\href{https://github.com/JayeshVP24/Research-Nerd}{\textbf{\large{\underline{Research Nerd}}} \href{https://github.com/JayeshVP24/Research-Nerd}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Next.js, Flask, Firebase, TailwindCSS}}}{JAN 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Accurate Recommendation system} of Research papers with \textbf{complete authentication} }}
+            \resumeItem{\normalsize{\textbf{End-to-End} Machine Learning project with \textbf{top notch UI}}}
+            \resumeItem{\normalsize\href{https://github.com/JayeshVP24/Research-Nerd}{https://github.com/JayeshVP24/Research-Nerd}} 
+          \resumeItemListEnd
+          % \vspace{-13pt}
+          %  \resumeProjectHeading
+          % {\href{http://shield-three.vercel.app/}{\textbf{\large{\underline{S.H.I.E.L.D.}}} \href{http://shield-three.vercel.app/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Next.js, Leaflet.js, Firebase, Landbot, Twilio, Node.js}}}{SEP 2022}
+          % \resumeItemListStart
+          %   \resumeItem{\normalsize{Community App to share and report uncertain behaviour, focused emergency support app supported completely by community}}
+          %   \resumeItem{\normalsize\href{https://github.com/JayeshVP24/S.H.I.E.L.D}{https://github.com/JayeshVP24/S.H.I.E.L.D}} 
+          % \resumeItemListEnd 
+     
+          
+    \resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Javascript, Typescript, Python, C++}} \\
+     \textbf{\normalsize{Databases:}}{ \normalsize{MySQL, Firestore, MongoDB, PostgresSQL, Redis}} \\
+     \textbf{\normalsize{Tools:}}{ \normalsize{VS Code, Figma, Postman, Git, Notion, Github, Discord}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{ \normalsize{React.js, Next.js, Astro, Svelte, Node.js, Express, TailwindCSS, Sass, HTML, CSS, Redux, Firebase, x-state, UI/UX, Google Cloud Platform}} \\
+     
+    }}
+ \end{itemize}
+ \vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Thakur College of Engineering and Technology}{JUN 2021 -- APR 2024}
+      {B.TECH IN AI\&ML }{Mumbai, India}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vidyalankar Polytechnic}{JUN 2018 -- MAR 2021}
+      {DIPLOMA IN COMPUTER ENGINEERING  - \textbf{Percentage} - \textbf{96.34\%}}{Mumbai, India}
+  \resumeSubHeadingListEnd
+
+
+
+
+\end{document}
