@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "echo 'Static site — no build step needed'"
+    "build": "xelatex -output-directory=public resume.tex && mv public/resume.aux public/resume.log public/resume.out . 2>/dev/null; true"
   }
 }
