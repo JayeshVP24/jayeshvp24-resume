@@ -102,12 +102,12 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{\large#1} & \textbf{\small #2} \\
       \textit{\large#3} & \textit{\small #4} \\
       
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -122,7 +122,7 @@
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -133,7 +133,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
 
 
 \newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
@@ -149,7 +149,6 @@
 
 \begin{center}
     {\Huge \scshape Jayesh Potlabattini} \\ \vspace{1pt}
-    Mumbai, India \\ \vspace{1pt}
     \href{mailto:hello@jayesh.me}{\raisebox{-0.2\height}\faEnvelope\  \underline{hello@jayesh.me}} ~ 
     \href{https://jayesh.me}{\raisebox{-0.2\height}\faGlobe\ \underline{jayesh.me}}  ~
     \href{https://linkedin.com/in/JayeshVP24}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{JayeshVP24}}  ~
@@ -158,42 +157,32 @@
     \vspace{-0pt}
 \end{center}
 
-% %------RELEVANT COURSEWORK-------
-% \section{SKILLS}
-%     \resumeSubHeadingListStart
-%         % \resumeSubheading {Languages}
-%         \begin{multicols}{4}
-%             \begin{itemize}[itemsep=-2pt, parsep=5pt]
-%                 \item Data Structures \& Algorithms
-%                 \item Operating Systems
-%                 \item Network Security
-%                 \item Database Management System (DBMS)
-%                 \item Artificial Intelligence
-%                 \item OOPS Concept
-%                 \item Web Development
-%                 \item Android Development
-%             \end{itemize}
-%         \end{multicols}
-%         \vspace*{2.0\multicolsep}
-%     \resumeSubHeadingListEnd
-
+%-----------ABOUT-----------
+\section{ABOUT}
+\small{Full stack developer with 4+ years of experience specializing in high-ownership product engineering and modern web development. Recently led core product systems at Superteam Earn, building AI-driven features, growth infrastructure, and optimized platform systems scaling to 150k users and \$10M in total value earned. Proficient in the modern web stack including TypeScript, React, Next.js, AI SDK, PostgreSQL, and TailwindCSS. Proven track record in fast-paced startup environments delivering high-impact, user-facing products across Web3 and AI applications.}
+\vspace{-5pt}
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Superteam Earn \href{https://earn.superteam.fun}{\raisebox{-0.1\height}\faExternalLink}}{MAR 2024 -- DEC 2025} 
-      {\underline{Full Stack Developer}}{Remote}
+      {Superteam Earn \href{https://earn.superteam.fun}{\raisebox{-0.1\height}{\scriptsize\faExternalLink}}}{MAR 2024 -- DEC 2025} 
+      {\underline{Full Stack Developer}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{Owned \textbf{AI-driven product systems} including \textbf{AI Agents} for automated listing reviews and \textbf{AI listing builder}}}
-        \resumeItem{\normalsize{Built and maintained \textbf{core platform features} scaling to \textbf{150k users} and \textbf{\$10M total value exchanged}}}
+        \resumeItem{\normalsize{Built and maintained \textbf{core platform features} scaling to \textbf{150k users} and \textbf{\$10M total value earned}}}
         \resumeItem{\normalsize{Redesigned onboarding and listing builder flows, increasing \textbf{form conversion from ~40\% to 70\%}}}
+        \resumeItem{\normalsize{Drove codebase-wide refactoring that reduced \textbf{build times} and improved \textbf{page load performance}, enabling faster shipping cycles}}
+        \resumeItem{\normalsize{Implemented \textbf{PostHog} analytics pipeline, automated \textbf{Twitter impression tracking}, and built internal \textbf{Telegram-based automation} workflows for data-driven product decisions}}
+        \resumeItem{\normalsize{Architected \textbf{search, leaderboard, and talent scout} systems with \textbf{optimized SQL}, powering core discovery and ranking across the platform}}
+        \resumeItem{\normalsize{Shipped \textbf{growth initiatives} — Telegram notification systems, automated email campaigns, in-app popups, and surveys — driving platform-wide \textbf{user acquisition}}}
+        \resumeItem{\normalsize{Led \textbf{SEO strategy} and implementation, improving \textbf{organic search visibility} and platform discoverability}}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Superteam Global \href{https://superteam.fun}{\raisebox{-0.1\height}\faExternalLink}}{NOV 2023 -- MAR 2024} 
-      {\underline{Full Stack Developer}}{Remote}
+      {Superteam Global \href{https://superteam.fun}{\raisebox{-0.1\height}{\scriptsize\faExternalLink}}}{NOV 2023 -- MAR 2024} 
+      {\underline{Full Stack Developer}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{Owned \textbf{internal product tooling} and \textbf{analytics dashboards} for regional Superteams}}
         \resumeItem{\normalsize{Built data visualization and comparison tools enabling teams to \textbf{track and scale growth} across regions}}
@@ -201,18 +190,36 @@
 
     \resumeSubheading
       {Tontine}{OCT 2023 -- NOV 2023} 
-      {\underline{Full Stack Developer}}{Remote}
+      {\underline{Full Stack Developer}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{Built and shipped a \textbf{smart-contract-integrated}, wallet-authenticated game for \textbf{Web3 user retention}}}
         \resumeItem{\normalsize{Gamified dApp retention mechanics with \textbf{on-chain interactions} and real-time gameplay}}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Saganize \href{https://saganize.com}{\raisebox{-0.1\height}\faExternalLink}}{AUG 2023 -- OCT 2023} 
-      {\underline{Full Stack Developer}}{Remote}
+      {Saganize \href{https://saganize.com}{\raisebox{-0.1\height}{\scriptsize\faExternalLink}}}{AUG 2023 -- OCT 2023} 
+      {\underline{Full Stack Developer}}{}
       \resumeItemListStart
         \resumeItem{\normalsize{Built secure, in-app \textbf{Solana transaction signing} flows using \textbf{Google auth} and custom PIN verification}}
         \resumeItem{\normalsize{Developed \textbf{mobile SDK} components for seamless in-app Solana wallet support}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ElightLabs Technologies}{SEP 2021 -- DEC 2021} 
+      {\underline{Intern - Full Stack Web Developer}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Built fast, business-centric websites for \textbf{15+ clients} using \textbf{Next.js} and \textbf{TailwindCSS}}}
+        \resumeItem{\normalsize{Implemented \textbf{image optimization} techniques, improving \textbf{page load speeds by 60\%}}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nirlopa Games}{NOV 2020 -- FEB 2021} 
+      {\underline{Intern - Full Stack Web Developer}}{}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Wrote \textbf{30+ RESTful APIs} using Node.js, Express, TypeORM across MySQL, MongoDB, and Redis for transactions, dashboards, and analytics}}
+        \resumeItem{\normalsize{Designed and implemented a complete \textbf{friends system} in MongoDB from the ground up for a live multiplayer game}}
+        \resumeItem{\normalsize{Built a full \textbf{admin dashboard} from scratch using Ionic React for internal game management}}
+        \resumeItem{\normalsize{Identified and resolved \textbf{edge cases in existing APIs}, improving overall system reliability}}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -232,7 +239,7 @@
           \vspace{-13pt}
 
        \resumeProjectHeading
-          {\href{https://retronexus.world/}{\textbf{\large{\underline{Retro Nexus}}} \href{https://retronexus.world/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{SvelteKit, GPT, Hugging Face, Solana, TailwindCSS}}}{2023}
+          {\href{https://retronexus.world/}{\textbf{\large{\underline{Retro Nexus}}} \href{https://retronexus.world/}{\raisebox{-0.1\height}{\scriptsize\faExternalLink} }} $|$ \large{\underline{SvelteKit, GPT, Hugging Face, Solana, TailwindCSS}}}{2023}
           \resumeItemListStart
             \resumeItem{\normalsize{\textbf{AI-driven storytelling} through interactive chat and \textbf{on-chain generative imagery}}}
             \resumeItem{\normalsize{Shape multi-storyline narratives with AI, rewarding players with \textbf{NFTs on Solana}}}
@@ -251,7 +258,7 @@
      \textbf{\normalsize{Technologies/Frameworks:}}{
        \normalsize{React, Next.js, AI SDK, Zod, TailwindCSS, Framer Motion, Radix UI, Shadcn UI, Solana, Node.js, Express, tRPC, Svelte, SvelteKit, Vite, Astro, HTML, CSS}} \\
      \textbf{\normalsize{Databases:}}{ \normalsize{PostgreSQL, MongoDB, MySQL, Firestore, Redis}} \\
-     \textbf{\normalsize{Tools:}}{ \normalsize{Cursor, Claude Code, Codex, Neovim, Git, Figma, GitHub, Postman, Bun}} \\
+     \textbf{\normalsize{Tools:}}{ \normalsize{Cursor, Claude Code, PostHog, Neovim, Git, Figma, GitHub, Postman, Bun}} \\
     }}
  \end{itemize}
  \vspace{-12pt}
@@ -260,13 +267,13 @@
 \section{EDUCATION}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Thakur College of Engineering and Technology}{JUN 2021 -- APR 2024}
-      {B.TECH IN AI\&ML - \textbf{CGPA} - \textbf{9.2} current average}{Mumbai, India}
+      {University of Mumbai}{JUN 2021 -- MAY 2024}
+      {Bachelor of Technology (B.Tech), Computer Science - \textbf{CGPA} - \textbf{9.2}}{}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
     \resumeSubheading
       {Vidyalankar Polytechnic}{JUN 2018 -- MAR 2021}
-      {DIPLOMA IN COMPUTER ENGINEERING  - \textbf{Percentage} - \textbf{96.34\%}}{Mumbai, India}
+      {DIPLOMA IN COMPUTER ENGINEERING  - \textbf{Percentage} - \textbf{96.34\%}}{}
   \resumeSubHeadingListEnd
 
 
